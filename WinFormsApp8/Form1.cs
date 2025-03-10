@@ -24,19 +24,13 @@ namespace WinFormsApp8
             g.Clear(Color.White); // Очищаем PictureBox
 
             // Определяем точки для звезды
-            starPoints = CalculateStarPoints(5, new PointF(pictureBox1.Width / 2, pictureBox1.Height / 2), 50, 100);
+            starPoints = CalculateStarPoints(5, new PointF(pictureBox1.Width / 2, pictureBox1.Height / 2), 100, 50);
 
             // Рисуем контур звезды
             g.DrawPolygon(Pens.Black, starPoints);
 
             // Отображаем изображение в PictureBox
             pictureBox1.Image = bmp;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            // Очищаем PictureBox и рисуем звезду заново
-            InitializeDrawing();
         }
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
@@ -102,7 +96,7 @@ namespace WinFormsApp8
             return inside;
         }
 
-        private PointF[] CalculateStarPoints(int numPoints, PointF center, float innerRadius, float outerRadius)
+        private PointF[] CalculateStarPoints(int numPoints, PointF center, float outerRadius, float innerRadius)
         {
             PointF[] points = new PointF[numPoints * 2];
             double angle = Math.PI / numPoints;
