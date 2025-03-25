@@ -29,56 +29,67 @@
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            button1 = new Button();
+            btnFill = new Button();
+            btnDraw = new Button();
+            btnAlgorithm = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(12, 186);
+            pictureBox1.Location = new Point(12, 70);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(348, 252);
+            pictureBox1.Size = new Size(776, 368);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // btnFill
             // 
-            pictureBox2.Location = new Point(440, 186);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(348, 252);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            btnFill.Location = new Point(365, 12);
+            btnFill.Name = "btnFill";
+            btnFill.Size = new Size(85, 23);
+            btnFill.TabIndex = 2;
+            btnFill.Text = "Заливка";
+            btnFill.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnDraw
             // 
-            button1.Location = new Point(359, 157);
-            button1.Name = "button1";
-            button1.Size = new Size(85, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Выполнить";
-            button1.UseVisualStyleBackColor = true;
+            btnDraw.Location = new Point(365, 41);
+            btnDraw.Name = "btnDraw";
+            btnDraw.Size = new Size(85, 23);
+            btnDraw.TabIndex = 3;
+            btnDraw.Text = "Рисование";
+            btnDraw.UseVisualStyleBackColor = true;
+            // 
+            // btnAlgorithm
+            // 
+            btnAlgorithm.Location = new Point(456, 12);
+            btnAlgorithm.Name = "btnAlgorithm";
+            btnAlgorithm.Size = new Size(85, 23);
+            btnAlgorithm.TabIndex = 4;
+            btnAlgorithm.Text = "8 алгоритм";
+            btnAlgorithm.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Controls.Add(pictureBox2);
+            Controls.Add(btnAlgorithm);
+            Controls.Add(btnDraw);
+            Controls.Add(btnFill);
             Controls.Add(pictureBox1);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private Button button1;
+        private Button btnFill;
+        private Button btnDraw;
+        private Button btnAlgorithm;
     }
 }
